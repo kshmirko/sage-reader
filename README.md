@@ -14,10 +14,9 @@ Element size of FLTARR is 4
 
 
 
-PRO sg2_indexinfo, data
+    PRO sg2_indexinfo, data
 
-data = {num_prof:           0L,            $ ; Number of profiles in these files
-
+    data = {num_prof:           0L,            $ ; Number of profiles in these files
         ; Revision Info
         Met_Rev_Date:       0L,            $ ; LaRC Met Model Revision Date (YYYYMMDD)
         Driver_Rev:         BYTARR(8),     $ ; LaRC Driver Version (e.g. 6.20)
@@ -71,12 +70,12 @@ data = {num_prof:           0L,            $ ; Number of profiles in these files
         Spec_Cre_Date:      LONARR(930),   $ ; Record creation date (YYYYMMDD format)
         Spec_Cre_Time:      LONARR(930)    } ; Record creation time (HHMMSS format)
 
-END
+    END
 
 
-PRO sg2_specinfo, data
+    PRO sg2_specinfo, data
 
-data = {Tan_Alt:              FLTARR(8),     $ ; Subtangent Altitudes (km)
+    data = {Tan_Alt:              FLTARR(8),     $ ; Subtangent Altitudes (km)
         Tan_Lat:              FLTARR(8),     $ ; Subtangent Latitudes  @ Tan_Alt (deg)
         Tan_Lon:              FLTARR(8),     $ ; Subtangent Longitudes @ Tan_Alt (deg)
         NMC_Pres:             FLTARR(140),   $ ; Gridded Pressure profile (mb)
@@ -109,4 +108,4 @@ data = {Tan_Alt:              FLTARR(8),     $ ; Subtangent Altitudes (km)
         Dens_Mid_Atm_Err:     INTARR(70),    $ ; Error in Middle Atm. Density (%*100)
         InfVec:               INTARR(140)    } ; Informational Bit flags
 
-END
+    END
