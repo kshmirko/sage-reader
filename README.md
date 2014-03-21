@@ -8,9 +8,10 @@ format is hard to support and it didn't save information about metadata.
 SAGE II experiment data is stored in two separate files: index file ans spectra file. Below their structute is 
 provided. 
 
-Element size of FLTARR is 4
-                INTARR is 2
-                LONARR is 4
+Element size of
+* FLTARR is 4
+* INTARR is 2
+* LONARR is 4
 
 
 

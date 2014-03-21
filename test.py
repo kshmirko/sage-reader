@@ -39,3 +39,7 @@ ax.add_patch(circ)
 ax.plot(Lon[ok],Lat[ok],'r.', mew=3)
 
 plt.show()
+
+
+
+
